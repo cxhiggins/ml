@@ -134,4 +134,8 @@ dmypy.json
 /lab-1/winequality-white.pickle
 /lab-2/voting.pickle
 /lab-2/voting-full.pickle
-*/.DS_Store
+*.DS_Store
+ML Sheet 2.pdf
+sheet-0.ipynb
+sheet-1
+sheet-1-solutions
