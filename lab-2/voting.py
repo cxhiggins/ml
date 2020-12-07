@@ -49,7 +49,7 @@ def process_data(raw_data, include_missing=False):
         return (X[complete], y[complete])
 
 
-# Class definitions"
+# Class definitions
 
 class NBC:
     # feature_types : List[char]
@@ -61,6 +61,11 @@ class NBC:
 
         if 'b' in self.feature_types:
             raise Exception("Binary features not yet implemented")
+
+    def nonzero_var(self, v):
+        if v == 0:
+            return 1e-6
+        return v
 
     # Estimates parameters of the NBC, assuming real-valued features to be univariate Gaussians
     def fit(self, X, y):
@@ -76,14 +81,13 @@ class NBC:
         self.theta = dict()  # theta_cj = (mean, var) of x_j given y = c
 
         for c, x_vals in self.classes.items():
-            self.theta[c] = [(np.mean(col), np.var(col)) for col in zip(*x_vals)]
+            self.theta[c] = [(np.mean(col), self.nonzero_var(np.var(col))) for col in zip(*x_vals)]
 
         self.pi = { c: float(len(x_vals))/N for c, x_vals in self.classes.items() }
 
 
     def log_prob(self, x, mean, std):
         return -0.5*pow(x-mean, 2)/pow(std, 2) - np.log(std * np.sqrt(2*np.pi))
-
 
     # Computes class conditional probabilities for new inputs on all classes
     # and returns the class with the largest probabilitiy
@@ -124,7 +128,8 @@ class LR:
         self.lr = LogisticRegression(
             random_state=0,
             multi_class="multinomial",   # Update when implementing binary features
-            C=10
+            C=10,
+            max_iter=1000
         )
 
     def fit(self, X, Y):
