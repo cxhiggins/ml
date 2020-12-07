@@ -130,11 +130,10 @@ dmypy.json
 
 # ADDED
 # Data files
-/lab-1/winequality-red.pickle
-/lab-1/winequality-white.pickle
-/lab-2/voting.pickle
-/lab-2/voting-full.pickle
+*.gz
+*.pickle
 *.DS_Store
+
 ML Sheet 2.pdf
 sheet-0.ipynb
 sheet-1
