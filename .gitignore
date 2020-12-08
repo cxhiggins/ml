@@ -134,7 +134,5 @@ dmypy.json
 *.pickle
 *.DS_Store
 
-ML Sheet 2.pdf
-sheet-0.ipynb
-sheet-1
-sheet-1-solutions
+# VSCode
+*.vscode
