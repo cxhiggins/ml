@@ -1,4 +1,73 @@
+# On my local machine, I installed tensorflow using the following command:
+#   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/apple/tensorflow_macos/master/scripts/download_and_install.sh)"
+# (Source: https://github.com/apple/tensorflow_macos)
+
+# Once installed, the venv containing tensorflow can be activated via:
+#   . /Users/cara/tensorflow_macos_venv/bin/activate.fish
+
 ipykernel==5.3.4
 Keras-Preprocessing==1.1.2
 matplotlib==3.3.3
 numpy==1.19.4
+
+# absl-py==0.11.0appnope==0.1.2astunparse==1.6.3
+# backcall==0.2.0
+# cached-property==1.5.2
+# cachetools==4.1.1
+# certifi==2020.12.5
+# chardet==3.0.4
+# cycler==0.10.0
+# decorator==4.4.2
+# flatbuffers==1.12
+# gast==0.4.0
+# google-auth==1.23.0
+# google-auth-oauthlib==0.4.2
+# google-pasta==0.2.0
+# grpcio @ file:///var/folders/gl/ls5xr4hd0g1gzyrtxph5ypf80000gn/T/tmp.9t9XbxDX/tensorflow_macos/x86_64/grpcio-1.33.2-cp38-cp38-macosx_11_0_x86_64.whl
+# h5py @ file:///var/folders/gl/ls5xr4hd0g1gzyrtxph5ypf80000gn/T/tmp.9t9XbxDX/tensorflow_macos/x86_64/h5py-2.10.0-cp38-cp38-macosx_11_0_x86_64.whl
+# idna==2.10
+# ipykernel==5.3.4
+# ipython==7.19.0
+# ipython-genutils==0.2.0
+# jedi==0.17.2
+# jupyter-client==6.1.7
+# jupyter-core==4.7.0
+# Keras-Preprocessing==1.1.2
+# kiwisolver==1.3.1
+# Markdown==3.3.3
+# matplotlib==3.3.3
+# numpy @ file:///var/folders/gl/ls5xr4hd0g1gzyrtxph5ypf80000gn/T/tmp.9t9XbxDX/tensorflow_macos/x86_64/numpy-1.18.5-cp38-cp38-macosx_11_0_x86_64.whl
+# oauthlib==3.1.0
+# opt-einsum==3.3.0
+# parso==0.7.1
+# pexpect==4.8.0
+# pickleshare==0.7.5
+# Pillow==8.0.1
+# prompt-toolkit==3.0.8
+# protobuf==3.14.0
+# ptyprocess==0.6.0
+# pyasn1==0.4.8
+# pyasn1-modules==0.2.8
+# Pygments==2.7.3
+# pyparsing==2.4.7
+# python-dateutil==2.8.1
+# pyzmq==20.0.0
+# requests==2.25.0
+# requests-oauthlib==1.3.0
+# rsa==4.6
+# scipy @ file:///var/folders/gl/ls5xr4hd0g1gzyrtxph5ypf80000gn/T/tmp.9t9XbxDX/tensorflow_macos/x86_64/scipy-1.5.4-cp38-cp38-macosx_11_0_x86_64.whl
+# six==1.15.0
+# tensorboard==2.4.0
+# tensorboard-plugin-wit==1.7.0
+# tensorflow-addons @ file:///var/folders/gl/ls5xr4hd0g1gzyrtxph5ypf80000gn/T/tmp.9t9XbxDX/tensorflow_macos/x86_64/tensorflow_addons-0.11.2%2Bmlcompute-cp38-cp38-macosx_11_0_x86_64.whl
+# tensorflow-estimator==2.3.0
+# tensorflow-macos @ file:///var/folders/gl/ls5xr4hd0g1gzyrtxph5ypf80000gn/T/tmp.9t9XbxDX/tensorflow_macos/x86_64/tensorflow_macos-0.1a0-cp38-cp38-macosx_11_0_x86_64.whl
+# termcolor==1.1.0
+# tornado==6.1
+# traitlets==5.0.5
+# typeguard==2.10.0
+# typing-extensions==3.7.4.3
+# urllib3==1.26.2
+# wcwidth==0.2.5
+# Werkzeug==1.0.1
+# wrapt==1.12.1
